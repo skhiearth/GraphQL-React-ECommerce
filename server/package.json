@@ -1,0 +1,38 @@
+{
+  "name": "server",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "strapi": "3.0.5",
+    "strapi-admin": "3.0.5",
+    "strapi-connector-mongoose": "3.0.5",
+    "strapi-email-sendgrid": "^3.0.0-alpha.14.5",
+    "strapi-plugin-content-manager": "3.0.5",
+    "strapi-plugin-content-type-builder": "3.0.5",
+    "strapi-plugin-email": "3.0.5",
+    "strapi-plugin-graphql": "3.0.5",
+    "strapi-plugin-upload": "3.0.5",
+    "strapi-plugin-users-permissions": "3.0.5",
+    "strapi-utils": "3.0.5",
+    "stripe": "^8.67.0"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "1a2466ef-1c5a-4bf4-bdb9-4701f649cb73"
+  },
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
