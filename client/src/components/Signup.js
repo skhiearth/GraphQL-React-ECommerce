@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Box, Button, Heading, Text, TextField } from "gestalt";
 import { setToken } from "../utils";
-import ToastMessage from "./ToastMessage";
 import Strapi from "strapi-sdk-javascript/build/main";
 const apiUrl = process.env.API_URL || "http://localhost:1337";
 const strapi = new Strapi(apiUrl);
@@ -26,7 +25,6 @@ class Signup extends React.Component {
     const { username, email, password } = this.state;
 
     if (this.isFormEmpty(this.state)) {
-      this.showToast("Fill in all fields");
       return;
     }
 
@@ -39,7 +37,6 @@ class Signup extends React.Component {
       this.redirectUser("/");
     } catch (err) {
       this.setState({ loading: false });
-      this.showToast(err.message);
     }
   };
 
@@ -125,7 +122,6 @@ class Signup extends React.Component {
             />
           </form>
         </Box>
-        <ToastMessage show={toast} message={toastMessage} />
       </Container>
     );
   }

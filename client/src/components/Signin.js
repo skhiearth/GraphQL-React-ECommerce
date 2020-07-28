@@ -29,7 +29,7 @@ class Signin extends React.Component {
       return;
     }
 
-    // Sign up user
+    // Sign in user
     try {
       this.setState({ loading: true });
       const response = await strapi.login(username, password);
